@@ -1,0 +1,42 @@
+.Restaurant_Container {
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.Restaurant_Heading {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 18px;
+  margin-left: 5px;
+  justify-content: space-between;
+  
+}
+
+.Button50 {
+  align-items: center;
+  gap: 30px;
+  height: 40px;
+  margin-left: 100px;
+  display: flex;
+}
+
+.Setting_Restaurant {
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 560px) {
+  .Restaurant_Heading {
+    font-family: Inter;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .Button4 {
+    margin: 25px 0px 0px 50px;
+  }
+}

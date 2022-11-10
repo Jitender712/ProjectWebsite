@@ -1,0 +1,63 @@
+.Settings_Container {
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: scroll; */
+}
+
+.Settings_Heading {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: 5px;
+  justify-content: space-between;
+  /* padding-right: px; */
+}
+
+.ButtonSettings {
+
+    margin: 25px 0px;
+    width: 183px;
+  
+}
+
+.Setting_Settings {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 560px) {
+  .Settings_Heading {
+    font-family: Inter;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .ButtonSettings {
+    margin: 25px 0px 0px 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Settings_Heading {
+    font-family: Inter;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .ButtonSettings {
+    margin: 25px 0px 0px 50px;
+  }
+
+.LastDivSettings {
+  display: none;
+}
+}
+
+.LastDivSettings {
+  display: flex;
+}

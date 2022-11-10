@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(to top, white, transparent),
+      linear-gradient(to bottom, white, transparent),
+      linear-gradient(to top right, blue, transparent);
+  }
+  .Businessdetail_Pic {
+    height: 580px;
+    width: 50%;
+    background-color: rgb(233, 240, 242);
+  }
+  .Business_Detail3 {
+    height: 510px;
+    width: 50%;
+  
+  }
+  .Business_Detail {
+    display: flex;
+    /* background: red; */
+  
+  }
+  .Image {
+    /* background-color: aqua; */
+    margin-top: 20%;
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+  }
+  .Image_text {
+    margin-left: 16%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+  .Image_text2 {
+    margin-left: 13%;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .Border1 {
+    background-color: rgb(233, 240, 242);
+    /* height:3%; */
+  }
+  .Choose_Border5 {
+    background-color: blue;
+    width: 80%;
+    /* height:3%; */
+  }
+  .Complete4 {
+    font-weight: 600;
+    margin-left: 70%;
+  }
+  .Billing_Detail {
+    flex-direction: column;
+    /* background-color: rgb(212, 233, 240); */
+    height: 75%;
+    margin-left: 60px;
+    padding-right: 40px;
+ 
+  }
+  .BILLING_DETAIL{
+    display: flex;
+   
+  }
+  .Umbrella_logo{
+    width: 20%;
+    /* background-color: aqua; */
+    height:20px;
+    /* padding-right: 20px; */
+    padding-top: 5px;
+    
+  }
+  .Pay_AS_YOU_GO{
+    /* width: -webkit-fill-available; */
+    /* background-color: burlywood; */
+    height:20px;
+    width: 100%;
+    padding-top: 5px;
+    flex-direction: column;
+  }
+  .UMBRELLA_PAY{
+    display: flex;
+    /* gap:1rem; */
+    /* background-color: blanchedalmond; */
+    width:120%;
+  }
+  .Pay{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .CASH{
+    font-size: 20px;
+    font-weight: 700;
+  
+  }
+  .CASH>span{
+    font-size: 16px;
+   color:#0088FF;
+   }
+   .CASH1{
+    font-size: 20px;
+    font-weight: 700;
+   }
+   .CASH1>span{
+    color:grey;
+    font-size: 14px;
+   }
+   .CASH1>span>span{
+    font-size: 16px;
+   color:#0088FF;
+   }
+  .CASH2{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .CASH2>span{
+    color:grey;
+    font-size: 14px;
+   }
+   .CASH2>span>span{
+    font-size: 16px;
+   color:#0088FF;
+   }
+   .RADIO_BUTTON{
+    margin-left: 5px;
+    /* background-color: aqua; */
+   }

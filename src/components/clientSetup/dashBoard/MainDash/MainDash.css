@@ -1,0 +1,73 @@
+.MainDash_Container {
+  margin: 0;
+  width: inherit;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y:scroll; */
+}
+
+.MainDash_Heading {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: 5px;
+  justify-content: space-between;
+}
+
+.ButtonMainDash {
+  margin: 25px 0px;
+  width: 183px;
+}
+
+.Setting_MainDash {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+@media screen and (max-width: 560px) {
+  .MainDash_Heading {
+    font-family: Inter;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .ButtonMainDash {
+    margin: 25px 0px 0px 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .MainDash_Heading {
+    font-family: Inter;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .ButtonMainDash {
+    margin: 25px 0px 0px 50px;
+  }
+
+  .LastDivMaindash {
+    display: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .MainDash_Container {
+    margin: 0;
+    width: inherit;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+  }
+}
+
+.LastDivMaindash {
+  display: flex;
+}

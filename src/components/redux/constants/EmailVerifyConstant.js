@@ -1,0 +1,4 @@
+export const EMAIL_VERIFY_SUCCESS = "EMAIL_VERIFY_SUCCESS";
+export const EMAIL_VERIFY_FAIL = "EMAIL_VERIFY_FAIL";
+export const EMAIL_ID = "EMAIL_ID";
+export const CLIENT_ID="CLIENT_ID";

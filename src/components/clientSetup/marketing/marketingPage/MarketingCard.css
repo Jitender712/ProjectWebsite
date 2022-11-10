@@ -1,0 +1,12 @@
+.Card{
+    display:flex;
+  }
+  @media screen and (max-width: 1200px){
+
+  }
+  .Arrow_Setting{
+    margin-right: 20px;
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }

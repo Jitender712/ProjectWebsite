@@ -1,0 +1,60 @@
+.Box_Delievery {
+  display: flex;
+  margin-left: 10px;
+  flex: 1;
+  width: 98%;
+}
+.Delievery_Modes {
+  width: 35%;
+  flex:2;
+  font-weight: 600;
+  font-size: 18px;
+}
+.Delievery_ModesText {
+  color: grey;
+  flex:8;
+  margin: 10px;
+  font-size: 18px;
+}
+.Options {
+  background-color: rgb(178, 220, 234);
+  padding: 10px;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+}
+.Options1 {
+  display: flex;
+  gap: 5rem;
+  font-size: 18px;
+}
+.Select_Default {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.Option_Delievery {
+  margin-left: 10px;
+}
+.Button_DelieveryCancel {
+  display: flex;
+  margin-top: 5px;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.Delievery_min {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.Delievery_min > span {
+  color: grey;
+}
+.Delievery_Mode_Options {
+  flex:8;
+}
+.Space_For_Boxes {
+  width: auto;
+  flex:2;
+}

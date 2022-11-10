@@ -1,0 +1,117 @@
+
+.Mobile {
+  border-color: black;
+  width: 395px;
+  height: 37px;
+  background: white;
+  display: flex;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+
+.LogoContainers {
+  display: flex;
+  height: 76px;
+  width: 270.9800109863281px;
+  border-radius: 0px;
+}
+.Logo_img {
+  position: absolute;
+  left: 1.83%;
+  right: 94.8%;
+  /* top: 4.56%; */
+  bottom: 89.45%;
+}
+.Microdemand {
+  padding-top: 20px;
+  padding-left: 5px;
+ 
+  /* margin-left: 70px; */
+  font-family: "emoji";
+  font-size: 23px;
+  line-height: 33px;
+  margin: 0;
+  color: #222324;
+}
+
+.google {
+  font-family: "emoji";
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #222324;
+}
+.Login {
+  font-family: "Inter";
+  /* font-weight: 700; */
+  font-size: 30px;
+  line-height: 24px;
+}
+.Heading0{
+  font-size: 20px;
+}
+
+
+
+.HeadingLogin {
+  gap:2rem;
+  font-size: 15px;
+  color: #000000;
+}
+.MessageError{
+  color: red;
+  font-size: 14px;
+}
+/* .Container {
+  width: 100vw;
+  height: 100vh;
+  background: aquamarine;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Wrapper {
+  width: 20%;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+.Title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Input input[type="text"]{
+  min-width: 40%;
+  margin: 20px 10px 0px 0px;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+}
+
+.Button {
+  border: none;
+  padding: 15px 20px;
+  background-color: aqua;
+  color: white;
+  cursor: pointer;
+  border-radius: 1px;
+  border-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.Warning {
+  color: red;
+  font-size: 10px;
+} */

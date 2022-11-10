@@ -1,0 +1,144 @@
+.Topic {
+  display: flex;
+  justify-content: space-between;
+}
+.Topic1 {
+  margin-left: 10px;
+}
+.Topic2 {
+  margin-right: 10px;
+  color: blue;
+}
+.Text {
+  display: flex;
+}
+
+.Logoname {
+  margin-left: 15px;
+  font-size: 22px;
+}
+.Logo {
+  display: flex;
+  align-items: center;
+}
+.Img {
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  background: rgb(243, 234, 234);
+  border-radius: 7px;
+}
+.texting {
+  margin-left: 15px;
+}
+.texting > span {
+  color: blue;
+}
+.RestaurantPreview {
+  margin-left: 15px;
+  
+  color: blue;
+}
+.Topic4 {
+  margin-left: 10px;
+}
+.TextFeild5 {
+  margin-left: 15px;
+  display: flex;
+  width: 690px;
+  justify-content: space-between;
+}
+.Name6 {
+  margin-right: 90px;
+}
+.TextFeild6 {
+  margin: 15px;
+  display: flex;
+ width: 100%;
+  justify-content: space-between;
+}
+.Name10 {
+  margin-right: 45px;
+}
+.Name9 {
+  margin-left: 75px;
+}
+.Container4 {
+  margin-left: 10px;
+}
+
+.Address_Field_Container {
+  display: flex;
+  flex: 3;
+  flex-wrap: wrap;
+}
+
+.Address_details {
+  flex: 1;
+  margin: 5px;
+  /* background: aqua; */
+  align-items: center;
+  justify-content: center;
+}
+.TextFeild1 {
+  display: flex;
+  margin: 10px 12px 0px 13px;
+  justify-content: space-between;
+}
+.Name {
+  margin-left: 15px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1110px) {
+  .Address_Field_Container {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+  }
+  .Logo_Container_For_Restaurant{
+    margin: 5px;
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Address_Field_Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Logo_Container_For_Restaurant{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Logo_Container_For_Restaurant{
+  margin: 5px;
+  display: flex;
+  flex: 3;
+  flex-wrap: wrap;
+}
+.Restaurant_Image_Logo{
+  flex: 1;
+  margin: 5px;
+  /* background: aqua; */
+  align-items: center;
+  justify-content: center;
+}
+.Mobile_New{
+  border-color: black;
+  width: 300px;
+  height: 37px;
+  background: white;
+  display: flex;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  
+}
+.Buttons_Save1{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 5px;
+}

@@ -1,0 +1,43 @@
+.AdBannerContainer{
+    background: white;
+    width: 900;
+    height: 100;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.AdBannerHeading{
+   margin-left: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+.AdTextField{
+ margin-left: 10px;   
+ margin-top: -5px;
+}
+
+.AdBannerContainer_Box{
+    
+    align-items: center;
+}
+.AdButtons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.AdBannerLogo {
+margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .AdImage {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: rgb(243, 234, 234);
+    border-radius: 7px;
+  }

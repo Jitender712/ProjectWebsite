@@ -1,0 +1,74 @@
+.CardContainerP {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10;
+  /* justify-content: center; */
+  display: flex;
+  gap: 2rem;
+}
+
+
+.CategoryData {
+  display: flex;
+  height: 35px;
+  width: "auto-content";
+  justify-content: space-between;
+  background: rgb(236, 234, 234);
+  border-radius: 10px;
+  font-family: "Inter";
+  padding: 3px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  align-items: center;
+  color: #8f959e;
+  margin: 5px;
+}
+.ProductName{
+  display: flex;
+  height: 35px;
+  padding-left: 10px;
+  width: "auto-content";
+  justify-content: space-between;
+  background: rgb(249, 243, 243);
+  border-radius: 10px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  align-items: center;
+  color: #8f959e;
+  margin: 5px;
+}
+.ProductDetail{
+  align-items: center;
+  display: flex;
+  width: "auto-content";
+  height: 100px;
+  /* background: orange; */
+}
+.ImgContainer{
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+  /* background-color: rgb(238, 224, 199); */
+  border-radius: 6px;
+}
+.ProductData{
+  height: 80px;
+  width :180px;
+  margin: 10px;
+  border-radius: 6px;
+  flex-direction: column;
+  /* background: khaki; */
+}
+.Line{
+  background-color: antiquewhite;
+  width: auto;
+  height: 2px;
+  margin-bottom: 10px;
+}
+.Listing{
+  overflow-y: scroll;
+  cursor: pointer;
+}

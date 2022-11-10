@@ -1,0 +1,72 @@
+@media screen and (max-width: 1200px) {
+  .CardContainer {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .parentContainer {
+    height: 9rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CardContainer {
+    width: 90%;
+  }
+}
+@media screen and(max-width:900px) {
+  .parentContainer {
+    display: none;
+  }
+}
+
+.Cards {
+  height: 200px;
+}
+.Card {
+  flex-wrap: wrap;
+  /* justify-content: center;  */
+  display: flex;
+  /* gap: 2rem; */
+}
+
+@media screen and (max-width: 1200px) {
+  .Card {
+    display: flex;
+    /* flex-direction: column; */
+  }
+}
+.Paragraph {
+  margin: 8px 0px 0px 19px;
+  /* background-color: aqua; */
+  font-size: 28px;
+}
+.Month {
+  margin: 4px 0px 0px 21px;
+  color: grey;
+  /* background-color: aliceblue; */
+}
+
+.Box1 {
+  display: flex;
+}
+.Counting {
+  font-weight: 700;
+  font-size: 28px;
+  color: #11141a;
+  margin: 10px 0px 0px 90px;
+}
+.Counting1 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #11141a;
+
+  margin: 10px 0px 0px 125px;
+}
+.Counting3 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #11141a;
+
+  margin: 10px 0px 0px 148px;
+}

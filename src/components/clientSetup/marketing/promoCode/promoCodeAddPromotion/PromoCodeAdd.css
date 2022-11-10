@@ -1,0 +1,33 @@
+.Promo_Container_Box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ContainerPromotion {
+  display: flex;
+  gap: 10px;
+}
+.PromoHeading {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.PromoTextField {
+  width: auto;
+  /* margin-left: 10px; */
+  margin-top: -5px;
+}
+.Wrapper_Promotion {
+  display: flex;
+  flex-direction: column;
+flex: 1;
+}
+.Promotion_Container {
+  flex: 1;
+}
+.PromoButtons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 40px;
+}
+

@@ -1,0 +1,65 @@
+.OrderPage_Container {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    /* overflow-y: scroll; */
+  }
+  
+  .OrderPage_Heading {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 5px;
+    justify-content: space-between;
+  }
+  .Heading123{
+    margin-left: 10px;
+  }
+  .ButtonOrderPage {
+  
+      margin: 25px 0px;
+      width: 183px;
+    
+  }
+  
+  .Setting_OrderPage {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (max-width: 560px) {
+    .OrderPage_Heading {
+      font-family: Inter;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+    .ButtonOrderPage {
+      margin: 25px 0px 0px 50px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .OrderPage_Heading {
+      font-family: Inter;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+    .ButtonOrderPage {
+      margin: 25px 0px 0px 50px;
+    }
+  
+  .LastDivOrderPage {
+    display: none;
+  }
+  }
+  
+  .LastDivOrderPage {
+    display: flex;
+  }
+  

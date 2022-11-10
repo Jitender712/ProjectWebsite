@@ -1,0 +1,47 @@
+
+ .top_Corner{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    } 
+    .top_Left{
+    margin-left: 23px;
+    font-size: 28px;
+    font-weight: 500;
+    }
+    
+    .top_Right{
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .Option .css-1tp456l-MuiFormControl-root{
+        margin-top: 0px !important;
+    }
+    .Date{
+        margin-right: 20px;
+        font-size: 18px;
+    }
+    .Button1{
+        margin-left: 20px;
+        background-color: lightblue;
+        border-radius: 10px;
+        margin-right:10px;
+    }
+    
+    .Filter{
+        margin-right:10px;
+        color:gray;
+        
+    }
+    
+    .Order_Table{
+        margin: 10px;
+    }
+    .Orders{
+        display: flex ;
+    }
+    .Order{
+        width: "-webkit-fill-available";
+    }

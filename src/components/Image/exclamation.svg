@@ -1,0 +1,8 @@
+<svg id="exclamation" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <rect id="Rectangle_4" data-name="Rectangle 4" width="42" height="42" rx="10" fill="#f35162" opacity="0.3"/>
+  <g id="Group_3486" data-name="Group 3486" transform="translate(9 9)">
+    <rect id="Rectangle_5979" data-name="Rectangle 5979" width="24" height="24" fill="none"/>
+    <path id="Path_73" data-name="Path 73" d="M11.953,2A10,10,0,1,0,22,12,9.988,9.988,0,0,0,11.953,2ZM12,20a8,8,0,1,1,8-8A8.009,8.009,0,0,1,12,20Z" fill="#f35162"/>
+    <path id="Path_74" data-name="Path 74" d="M11,7h2v7H11Zm0,8h2v2H11Z" fill="#f35162"/>
+  </g>
+</svg>

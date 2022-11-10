@@ -1,0 +1,6 @@
+.ButtonSetDiscount{
+    margin: 10px;
+    justify-content: flex-end;
+    display: flex;
+    gap: 20px;
+}

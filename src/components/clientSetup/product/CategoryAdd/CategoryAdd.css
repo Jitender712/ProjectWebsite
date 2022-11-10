@@ -1,0 +1,30 @@
+.ModifyHead{
+    display: flex;
+    gap:10rem;
+    justify-content: flex-end;
+    
+}
+.Heading{
+    margin-top: 5px;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.Head{
+    font-style: normal;
+}
+.Drag{
+   margin-top: 15px;
+}
+.Drag>span{
+    color:grey;
+}
+.Drag>span>span{
+    color:blue;
+}
+.Buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap:1rem;
+    margin:68px 42px 0px 0px;
+}

@@ -1,0 +1,92 @@
+body{
+    background:
+  
+    linear-gradient(to top , white, transparent),
+    linear-gradient(to bottom ,white , transparent),
+    linear-gradient(to top right, blue, transparent);
+}
+.Businessdetail_Pic{
+    
+    height:580px;
+    width:50%;
+    background-color: rgb(233, 240, 242);
+}
+.Business_Detail1{
+   
+    height:500px;
+    width:50%;
+}
+.Business_Detail{
+    display: flex;
+}
+.Image{
+    /* background-color: aqua; */
+    margin-top: 20%;
+    width:80%;
+    height:40%;
+    margin-left: 10%;
+}
+.Image_text{
+    margin-left: 16%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.Image_text2{
+    margin-left: 13%;
+    font-size: 18px;
+   margin-top: 15px;
+}
+.Border1{
+    background-color: rgb(233, 240, 242);
+}
+.Border2{
+    background-color: blue;
+    width:20%;
+   /* height:3%; */
+}
+.Complete{
+    font-weight: 600;
+    margin-left: 6%;
+}
+.Business_Details{
+    flex-direction: column;
+    /* background-color: rgb(212, 233, 240); */
+    height:75%;
+    margin: 14px 60px 0px 60px;
+}
+.Shop_Name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.Store{
+    border-radius: 6px;
+    /* background-color: rgb(133, 140, 140); */
+    margin-top: 20px;
+    height: 15%;
+    border-color: black;
+    border: 0.1px solid gray;
+    height:18%;
+    display: flex;
+}
+.Store1{
+   /* background-color: azure ; */
+   height: 80%;
+   font-size: 17px;
+    width: 45%;
+    font-weight: 600;
+    /* gap: 67rem; */
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+.Store2{
+    /* background-color: azure ; */
+    height: 80%;
+    font-size: 17px;
+     width: 60%;
+     font-weight: 600;
+     /* gap: 67rem; */
+     margin-top: 10px;
+     margin-left: 15px;
+}

@@ -1,0 +1,104 @@
+.Right_side {
+  padding-left: 1px;
+  /* height: 758px; */
+  /* width: auto; */
+  border-radius: 0px;
+  background: white;
+  align-items: center;
+}
+.Search_box {
+  display: flex;
+  padding-left: 10px;
+  height: 44px;
+  border-radius: 6px;
+  margin: 20px;
+  background: rgba(229, 242, 255, 0.2);
+  align-items: center;
+}
+.Notification {
+  height: 44px;
+  width: 44px;
+
+  border-radius: 0px;
+  padding-top: 20px;
+}
+.Profile {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-left: 20px;
+  height: 120px;
+  width: auto;
+  /* background: rgb(57, 219, 247); */
+  border-radius: 0px;
+  position: relative;
+}
+.LinkProfile {
+  border-radius: 30px;
+  padding: 3px;
+  display: flex;
+  margin: 11px;
+  align-items: center;
+  margin-left: 25px;
+  width: 250px;
+  height: 40px;
+  background: rgba(165 180 195 / 20%);
+}
+.LinkContainer {
+  display: flex;
+  align-items: center;
+  /* margin-left: 20px; */
+}
+.Upgrade_To_Pro {
+  margin: 20px;
+
+  height: 155px;
+
+  border-radius: 20px;
+  cursor: pointer;
+}
+.upgradeDiv {
+  align-content: space-between;
+  flex-direction: column;
+  width: 173px;
+  height: 66px;
+}
+.Reminder_Heading {
+  width: 272px;
+  height: 2px;
+  padding-top: 10px;
+  margin-bottom: 10;
+  display: flex;
+  align-items: center;
+}
+.Reminders {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+   margin-left: 20px;;
+  padding-left: 10px;
+  width: 272px;
+  height: 278px; 
+  /* background-color: aqua; */
+}
+.Reminder {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: -10px;
+  width: 259px;
+  height: 42px;
+}
+.Icon {
+  margin: 1px;
+  padding: 5px;
+  width: 32px;
+  height: 32px;
+  background: rgb(247, 148, 148);
+}
+.ReminderMsg {
+  width: 202px;
+  height: 42px;
+}

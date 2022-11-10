@@ -1,0 +1,14 @@
+.Verify_OTP{
+    font-size: 24px;
+    /* font-weight: 600; */
+}
+.Verify_OTP>span>span{
+    font-size: 24px;
+    font-weight: 600;
+    color:grey;
+}
+
+.DIDNT_RECIEVE{
+    justify-content: center;
+    margin-top: 20px;
+}

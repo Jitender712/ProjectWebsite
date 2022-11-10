@@ -1,0 +1,104 @@
+/* .Order_details {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 10px;
+}
+.Order_Details_Heading {
+  width: 370px;
+  font-size: 16px;
+
+}
+*/
+
+.Order_Settings {
+  margin: 10px;
+  display: flex;
+  gap: 3rem;
+}
+.Outstanding_Payment {
+  width: 42%;
+  font-size: 18px;
+  margin-left: 10px;
+  height: 15%;
+}
+.Order_Detailing {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #8f959e;
+}
+.Order_Acceptance {
+  margin-left: 26%;
+  gap: 15px;
+  flex-direction: column;
+  padding: 15px;
+  display: flex;
+  background: #f5f9fb;
+  border-radius: 0px;
+}
+.Cancel_Save_Button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.Outstanding_Text {
+  height: 100%;
+  font-size: 18px;
+  color: grey;
+  width: 140%;
+  padding-left: 10px;
+}
+.Mandatory {
+  margin-top: 10px;
+  color: black;
+}
+.Mandatory_text {
+  height: 80%;
+  font-size: 18px;
+  color: grey;
+  width: 100%;
+  margin-top: 5px;
+}
+.Payment_Option {
+  width: 22%;
+  font-size: 18px;
+  margin-left: 10px;
+  height: 15%;
+}
+.Order_Setting1 {
+  height: 43%;
+  display: flex;
+  gap: 7rem;
+}
+.Cash_On_Delievery {
+  font-size: 18px;
+  color: black;
+  margin-right: 53px;
+
+  width: 83%;
+}
+.Switchs {
+  flex-direction: column;
+}
+.Switch2 {
+  margin-top: 26px;
+}
+.Cash_on_Delievery_text {
+  color: grey;
+  width: 120%;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.Pay_On_Delievery {
+  margin-top: 10px;
+}
+.Switch4 {
+  margin-top: 24px;
+}
+.Switch5 {
+  margin-top: 24px;
+}

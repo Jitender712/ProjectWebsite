@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186" height="76" viewBox="0 0 186 76">
+  <g id="demoLogo" transform="translate(439 -34)">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="186" height="76" transform="translate(-439 34)" fill="#fff" opacity="0"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(-39.02 324)">
+      <g id="Group_1" data-name="Group 1" transform="translate(-464.497 -216.499)">
+        <path id="Path_1" data-name="Path 1" d="M151.155-29.187H108.188V13.791" transform="translate(-38.671 -29.32)" fill="none" stroke="#08f" stroke-width="6"/>
+        <path id="Path_2" data-name="Path 2" d="M108.188,5.845H143.22V-29.187" transform="translate(-27.723 -18.34)" fill="none" stroke="#276ca8" stroke-width="6"/>
+        <path id="Path_3" data-name="Path 3" d="M29.032,0V28.772H0Z" transform="translate(80.465 -47.527)" fill="#e8f2f8"/>
+      </g>
+      <text id="MICRO_DEMAND" data-name="MICRO
+DEMAND" transform="translate(-339 -259)" fill="#222324" font-size="27" font-family="Inter-Regular, Inter"><tspan x="0" y="0">MICRO</tspan><tspan font-family="Inter-SemiBold, Inter" font-weight="600"><tspan x="0" y="33">DEMAND</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

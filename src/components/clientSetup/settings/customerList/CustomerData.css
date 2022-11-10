@@ -1,0 +1,17 @@
+.CustomerList{
+  display: flex;
+  justify-content: space-between;
+} 
+
+.Head2{
+  margin-left: 10px;
+  
+}
+.Symbol{
+
+display: flex;
+}
+.Icons{
+  margin : 8px;
+  color:blue;
+}
