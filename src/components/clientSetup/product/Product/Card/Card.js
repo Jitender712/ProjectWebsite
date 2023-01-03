@@ -22,7 +22,6 @@ const Card = () => {
   const [openPopupCategory, setOpenPopupCategory] = useState(false);
   const [openPopup, setOpenPopup] = useState(false);
   const [openPopupAdd, setOpenPopupAdd] = useState(false);
-
   const [productCategoryId, setProductCategoryId] = useState("");
   const [categoryList, setCategoryList] = useState([]);
   const [product, setProduct] = useState([]);
@@ -36,8 +35,6 @@ const Card = () => {
 
   const handleOnClick = () => {
     setOpenPopup(true);
-    
-
   };
 
   const ShowProducts = (id) => {
@@ -62,13 +59,18 @@ const Card = () => {
 
   useEffect(() => {
     fetch(
-      `${Client_URL}/v1/client/listProductCategories?clientId=${clientId}&page=${page}`
+      `${Client_URL}/v1/client/listProductCategories?clientId=${clientId}
+      &page=${page}`
     ).then((result) => {
       result.json().then((resp) => {
-        setCategoryList(resp.data);
+        console.log("doing worst ho rha h", resp);
+        if (resp.statusCode === 200) {
+          setCategoryList(resp.data);
+        }
       });
     });
   }, [clientId, page]);
+  console.log("==>", clientId, categoryList);
 
   return (
     <div className="CardContainerP">
@@ -117,7 +119,7 @@ const Card = () => {
             {categoryList.map((item, id) => {
               return (
                 <div className="CategoryData" key={id}>
-                  <div onClick={() => ShowProducts(item._id)}>{item.name}</div>
+                  {/* <div onClick={() => ShowProducts(item._id)}>{item.name}</div> */}
                   <MoreVertIcon
                     style={{ color: "black" }}
                     onClick={() => setOption(!option)}

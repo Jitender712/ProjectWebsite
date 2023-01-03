@@ -2,37 +2,38 @@ import React, { useState } from "react";
 import "./CategoryAdd.css";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
+import { Autocomplete, Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { categoryAdd } from "../../../redux/action/AddProductAction";
+import { CategoryDataOptions } from "../../../Data/Categorydata";
+import { useNavigate } from "react-router-dom";
 
-
-function CategoryAdd() {
-  
-  // const [openPopupCategory, setOpenPopupCategory] = useState(true);
-  const [name,setName]=useState("");
-  const [description , setDescription]=useState("");
-  const dispatch=useDispatch();
+function CategoryAdd(props) {
+  const {openPopupCategory1 } = props
+  const [openPopupCategory, setOpenPopupCategory] = useState(true);
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
+  const dispatch = useDispatch();
+  const navigate=useNavigate();
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
-  const token=userInfo.data.token;
-
+  const token = userInfo.data.token;
 
   const setCategory = useSelector((state) => state.setCategory);
-  const {error}=setCategory;
-  // const CloseOnClick=()=>{
-  //   setOpenPopupCategory(false)
-  // }
-
-  const handleOnClick=(e)=>{
-    console.log(name,"Name",description,"Desc");
-    e.preventDefault();
-    dispatch(categoryAdd(name, description,token));    
-    // alert("Category Added");
+  const { error } = setCategory;
+  const CloseOnClick=()=>{
+    setOpenPopupCategory(false)
 
   }
 
+  const handleOnClick1 = (e) => {
+    console.log(name, "Name", description, "Desc");
+    e.preventDefault();
+    dispatch(categoryAdd(name, description, token));
+    // alert("Category Added");
+      navigate("/Product");
+  };
 
   return (
     <div>
@@ -53,13 +54,26 @@ function CategoryAdd() {
             <div className="Heading">
               <div className="Head">
                 <h4>Category Name*</h4>
-                <TextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  style={{ width: 500, borderRadius: "18px",margin : "10px" }}
-                  placeholder="Enter Category Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                <Autocomplete
+                  disablePortal
+                  id="combo-box-demo"
+                  options={CategoryDataOptions}
+                  sx={{ width: 300 }}
+                  renderInput={(params) => (
+                    <TextField
+                      id="outlined-basic"
+                      variant="outlined"
+                      value={name}
+                      style={{
+                        width: 500,
+                        borderRadius: "18px",
+                        margin: "10px",
+                      }}
+                      onSelect={(e) => setName(e.target.value)}
+                      placeholder="Enter Category Name"
+                      {...params}
+                    />
+                  )}
                 />
               </div>
 
@@ -68,7 +82,7 @@ function CategoryAdd() {
                 <TextField
                   id="outlined-basic"
                   variant="outlined"
-                  sx={{ width: 500, borderRadius: "13px",margin : "10px" }}
+                  sx={{ width: 500, borderRadius: "13px", margin: "10px" }}
                   placeholder="Enter Description"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
@@ -85,20 +99,21 @@ function CategoryAdd() {
               <Button
                 variant="contained"
                 sx={{ borderRadius: 2, background: "grey" }}
-                // onClick={CloseOnClick}
+                // onClick={()=>handleOnClick()}
               >
                 Cancel
               </Button>
-              <Button variant="contained" sx={{ borderRadius: 2 }}
-              onClick={handleOnClick}
+              <Button
+                variant="contained"
+                sx={{ borderRadius: 2 }}
+                onClick={handleOnClick1}
               >
                 Add
               </Button>
             </div>
           </div>
         </Box>
-
-      </div>  
+      </div>
     </div>
   );
 }

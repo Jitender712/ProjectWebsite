@@ -27,6 +27,7 @@ export const categoryAdd = (name, description, token) => async (dispatch) => {
     console.log("data", data);
     if (data.statusCode === 200) {
       alert("Category Add");
+      
     } else {
       alert("Already Exist");
     }

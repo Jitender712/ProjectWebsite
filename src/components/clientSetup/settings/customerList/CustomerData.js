@@ -23,15 +23,15 @@ function CustomerCard() {
   useEffect(() => {
     console.log("clientid", clientId);
 
-    fetch(`${Client_URL}/v1/client/listCustomers?clientId=${clientId}`)
-      .then((result) => {
-        result.json().then((resp) => {
-          setCustomer(resp.data);
-        });
-      })
-      .catch((error) => {
-        console.log("Error", error);
-      });
+    // fetch(`${Client_URL}/v1/client/listCustomers?clientId=${clientId}`)
+    //   .then((result) => {
+    //     result.json().then((resp) => {
+    //       setCustomer(resp.data);
+    //     });
+    //   })
+    //   .catch((error) => {
+    //     console.log("Error", error);
+    //   });
       // console.log("CustomerList" , customer);
   }, [clientId]);
 

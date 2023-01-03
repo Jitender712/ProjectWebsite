@@ -26,6 +26,7 @@ import BusinessDetails from "./components/clientSetup/addBussinessDetails/Busine
 import BillingDetails from "./components/clientSetup/addBussinessDetails/BillingDetails";
 import ResendOTP from "./components/onBoarding/resendOTP/ResendOTP";
 import ResendOtpFP from "./components/onBoarding/resendOtpFp/resendOtpForgotPassword";
+import { LandingPage } from "./Test";
 function App() {
   return (
     <div className="App">
@@ -51,12 +52,12 @@ function App() {
           <Route path="/ChooseTheme" element={<ChooseTheme />} />
           <Route path="/Restaurant" element={<RestaurantContainer />} />
           <Route path="/Order" element={<OrderContainer />} />
-          <Route path="/SetupDomain" element={<SetupDomain/>} />
-          <Route path="/BusinessDetails" element={<BusinessDetails/>} />
-          <Route path="/BillingDetails" element={<BillingDetails/>} />
-          <Route path="/ResendOTP" element={<ResendOTP/>} />
-          <Route path="/ResendOtpFP" element={<ResendOtpFP/>} />
-          
+          <Route path="/SetupDomain" element={<SetupDomain />} />
+          <Route path="/BusinessDetails" element={<BusinessDetails />} />
+          <Route path="/BillingDetails" element={<BillingDetails />} />
+          <Route path="/ResendOTP" element={<ResendOTP />} />
+          <Route path="/ResendOtpFP" element={<ResendOtpFP />} />
+          <Route path="/test" element={<LandingPage/>} />
         </Routes>
       </BrowserRouter>
     </div>

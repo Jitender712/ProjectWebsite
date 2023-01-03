@@ -58,7 +58,7 @@ const VarientAdd = () => {
           Cancel
         </Button>
         <Button variant="contained" sx={{ borderRadius: 2 }}>
-          Add
+          Next
         </Button>
       </div>
     </Box>

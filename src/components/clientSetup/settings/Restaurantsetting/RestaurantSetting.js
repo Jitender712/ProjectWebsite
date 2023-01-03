@@ -23,14 +23,46 @@ const RestaurantSetting = () => {
   const [country, setCountry] = useState("India");
   const [Details, setDetails] = useState([]);
   const [message, setMessage] = useState("");
+  const [file, setFile] = useState({});
+  const [webFile, setWebFile] = useState();
+  const [mobileFile, setMobileFile] = useState();
+
   const navigate = useNavigate();
+  // const ClientId = useSelector((state) => state.setClientId);
+  // const Client_id = ClientId.id;
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
   const token = userInfo.data.token;
 
-  // const ClientId = useSelector((state) => state.setClientId);
-  // const Client_id = ClientId.id;
+  function handleChange(e) {
+    console.log(e.target.files);
+    setFile(URL.createObjectURL(e.target.files[0]));
+  }
+  function handleChangeWeb(e) {
+    console.log(e.target.files);
+    setWebFile(URL.createObjectURL(e.target.files[0]));
+  }
+  function handleChangeMobile(e) {
+    console.log(e.target.files);
+    setMobileFile(URL.createObjectURL(e.target.files[0]));
+  }
+
+  const setImageAction = async (event) => {
+    event.preventDefault();
+
+    const data = await fetch(`${Client_URL}/v1/client/Settings/uploadImage`, {
+      method: "put",
+      headers: { "Content-Type": "multipart/form-data" },
+    });
+    const uploadedImage = await data.json();
+    if (uploadedImage) {
+      console.log("Successfully uploaded image");
+    } else {
+      console.log("Error Found");
+    }
+  };
+
   const collectData1 = async () => {
     console.log(
       "token",
@@ -111,7 +143,7 @@ const RestaurantSetting = () => {
     }
   }, [token, storeId]);
 
-  console.log(Details, "Store Id", storeId);
+  console.log(Details, email, "Store Id", storeId);
 
   return (
     <div className="Container4">
@@ -242,13 +274,26 @@ const RestaurantSetting = () => {
                 <span>Logo</span>
               </div>
               <div className="Logo">
-                <div className="Img"></div>
+                <div className="Img">
+                  <img
+                    style={{
+                      height: "70px",
+                      width: "70px",
+                    }}
+                    src={webFile}
+                    alt=""
+                  />
+                </div>
                 <div className="texting">
-                  Drag & Drop Image, Or <span>browse </span>from computer
+                  Drag & Drop Image, Or{" "}
+                  <span>
+                    <input type="file" onChange={handleChangeWeb} />
+                  </span>
+                  from computer
                 </div>
               </div>
               <div className="RestaurantPreview">
-                <span>Preview</span>
+                <span onClick={setImageAction}>Upload</span>
               </div>
             </div>
             <div className="Restaurant_Image_Logo">
@@ -256,13 +301,26 @@ const RestaurantSetting = () => {
                 <span>Logo</span>
               </div>
               <div className="Logo">
-                <div className="Img"></div>
+                <div className="Img">
+                  <img
+                    style={{
+                      height: "70px",
+                      width: "70px",
+                    }}
+                    src={file}
+                    alt=""
+                  />
+                </div>
                 <div className="texting">
-                  Drag & Drop Image, Or <span>browse </span>from computer
+                  Drag & Drop Image, Or{" "}
+                  <span>
+                    <input type="file" onChange={handleChange} />
+                  </span>
+                  from computer
                 </div>
               </div>
               <div className="RestaurantPreview">
-                <span>Preview</span>
+                <span>Upload</span>
               </div>
             </div>
             <div className="Restaurant_Image_Logo">
@@ -270,13 +328,26 @@ const RestaurantSetting = () => {
                 <span>Logo</span>
               </div>
               <div className="Logo">
-                <div className="Img"></div>
+                <div className="Img">
+                  <img
+                    style={{
+                      height: "70px",
+                      width: "70px",
+                    }}
+                    src={mobileFile}
+                    alt=""
+                  />
+                </div>
                 <div className="texting">
-                  Drag & Drop Image, Or <span>browse </span>from computer
+                  Drag & Drop Image, Or{" "}
+                  <span>
+                    <input type="file" onChange={handleChangeMobile} />
+                  </span>
+                  from computer
                 </div>
               </div>
               <div className="RestaurantPreview">
-                <span>Preview</span>
+                <span>Upload</span>
               </div>
             </div>
           </div>

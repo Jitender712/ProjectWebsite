@@ -1,1 +1,1 @@
-export const Client_URL ="http://3.239.14.157:3001" 
+export const Client_URL ="http://44.207.111.67:3001" 
