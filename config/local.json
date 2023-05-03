@@ -1,0 +1,18 @@
+{
+    "port": 3001,
+    "jwtSecretKey": "micro_demand_jwt_secret_key",
+    "otpLength": 4,
+    "dbURL": "mongodb+srv://parking:9UwvQkp4TIaKgwvV@parkingcluster.vekazss.mongodb.net/?retryWrites=true&w=majority",
+    "authBaseUrl": "http://44.207.111.67:3000",
+    "emailConfig": {
+      "service": "Gmail",
+      "secure": false,
+      "port": 587,
+      "auth": {
+        "user": "ldt.developer@gmail.com",
+        "pass": "pilvcypxaipbtqgl"
+      }
+    },
+    "fromEmail": "ldt.developer@gmail.com"
+  }
+  

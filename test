@@ -1,0 +1,134 @@
+// Create CancelReason
+  // {
+  //   method: "POST",
+  //   path: "/v1/admin/createCancelReason",
+  //   handler: async (request, reply) => {
+  //     try {
+  //       let dataToSend = await Controllers.AdminController.createCancelReason(
+  //         request.auth.credentials,
+  //         request.query,
+  //         request.payload
+  //       );
+  //       return UniversalFunctions.sendSuccess(
+  //         responseMessages[language].SUCCESS.DEFAULT,
+  //         dataToSend,
+  //         language
+  //       );
+  //     } catch (err) {
+  //       return UniversalFunctions.sendError(err);
+  //     }
+  //   },
+  //   options: {
+  //     description: "Create Cancel Reason",
+  //     tags: ["api"],
+  //     auth: "Auth",
+  //     validate: {
+  //       query: Joi.object({
+  //         bookingId: Joi.objectId().required(),
+  //         reasonId: Joi.objectId().required(),
+  //         reasonDrivedBy: Joi.string().required().valid("Driver", "Consumer"),
+  //       }),
+  //       payload: Joi.object({
+  //         reason: Joi.string().required(),
+  //       }),
+  //       failAction: UniversalFunctions.failActionFunction,
+  //       headers: UniversalFunctions.authorizationHeaderObj,
+  //       options: {
+  //         allowUnknown: true,
+  //       },
+  //     },
+  //     plugins: {
+  //       "hapi-swagger": {
+  //         responseMessages: constants.swaggerDefaultResponseMessages,
+  //       },
+  //     },
+  //   },
+  // },
+
+
+
+
+  // static async createCancelReason(admin, query, payload) {
+//   console.log("Admin", admin, "Query", query, "payload", payload);
+//   let language = "en";
+//   try {
+//     let rideExist = await Services.DbOperations.findOne(
+//       Models.Ride,
+//       { _id: ObjectId(query.bookingId) },
+//       {},
+//       {}
+//     );
+//     let data = {
+//       message: "Running",
+//     };
+//     if (rideExist) {
+//       console.log(rideExist);
+//       let userId;
+//       if (query.userType === "Consumer") {
+//         userId = rideExist.ConsumerId;
+//       }
+//       // let createCancelReason = await Services.DbOperations.create(
+//       //   Models.CancelReasonBy,{
+//       //     reason:payload.reason,
+//       //     reasonId:query.reasonId,
+//       //     userType:query.reasonDrivedBy,
+//       //     // userId:
+//       //   }
+//       // )
+//     } else {
+//       let dataToSend = {
+//         message: "No Ride Exist",
+//       };
+//       return dataToSend;
+//     }
+//     console.log("data : ", data, rideExist);
+//     return data;
+//   } catch (err) {
+//     logger.logError("get Cancel Reason List", "Internal Server Error", err);
+//     return Promise.reject(
+//       responseMessages[language].ERROR.INTERNAL_SERVER_ERROR
+//     );
+//   }
+// }
+// static async createCancelReason(admin, query, payload) {
+//   console.log("Admin", admin, "Query", query, "payload", payload);
+//   let language = "en";
+//   try {
+//     let rideExist = await Services.DbOperations.findOne(
+//       Models.Ride,
+//       { _id: ObjectId(query.bookingId) },
+//       {},
+//       {}
+//     );
+//     let data = {
+//       message: "Running",
+//     };
+//     if (rideExist) {
+//       console.log(rideExist);
+//       let userId;
+//       if (query.userType === "Consumer") {
+//         userId = rideExist.ConsumerId;
+//       }
+//       // let createCancelReason = await Services.DbOperations.create(
+//       //   Models.CancelReasonBy,{
+//       //     reason:payload.reason,
+//       //     reasonId:query.reasonId,
+//       //     userType:query.reasonDrivedBy,
+//       //     // userId:
+//       //   }
+//       // )
+//     } else {
+//       let dataToSend = {
+//         message: "No Ride Exist",
+//       };
+//       return dataToSend;
+//     }
+//     console.log("data : ", data, rideExist);
+//     return data;
+//   } catch (err) {
+//     logger.logError("get Cancel Reason List", "Internal Server Error", err);
+//     return Promise.reject(
+//       responseMessages[language].ERROR.INTERNAL_SERVER_ERROR
+//     );
+//   }
+// }
